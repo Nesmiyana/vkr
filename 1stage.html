@@ -1,0 +1,62 @@
+<html>
+
+<meta charset="utf-8">
+
+<form action="1stage.php" method="POST">
+
+<style>
+p {
+font-size: 14pt;
+}
+</style>
+
+<H1>Данные и файлы студента</H1>
+
+<p><label for="name">ФИО студента: </label>
+<input type="text" name="name" size=30/> </p>
+
+<p><label for="group">Группа: </label>
+<input type="text" name="group"/> </p>
+
+<p>
+<label for="date">Дата защиты ВКР: </label>
+<input type="date" name="date"/></p>
+
+<p>
+<label for="memorandum">Пояснительная записка к ВКР</label><br>
+<input type="file" name="memorandum"/></p>
+
+<p>
+Выступление с докладом на региональной, межвузовской, российской или международной конференциях<br>
+<i>Загрузите программу конференции</i><br>
+<input type="file" name="conference"/>
+<input type="checkbox" name="conference_phys" name="Да"/>Предоставлено не в эл.виде</p>
+
+<p>
+Публикация тезисов научной статьи или докладов на региональной, межвузовской, российской или международной конференциях<br>
+<i>Загрузите тезисы доклада или научной статьи</i><br>
+<input type="file" name="publication"/>
+<input type="checkbox" name="publication_phys" name="Да"/>Предоставлено не в эл.виде</p>
+
+<p>
+Подача заявки на предполагаемое изобретение<br>
+<i>Загрузите копию заявки на предполагаемое изобретение</i><br>
+<input type="file" name="invention"/>
+<input type="checkbox" name="invention_phys" name="Да"/>Предоставлено не в эл.виде</p>
+
+<p>
+Участие в написании отчёта о НИОКР<br>
+<i>Загрузите копию списка исполнителей отчёта НИОКР, заверенную научным руководителем</i><br>
+<input type="file" name="NIOKR"/>
+<input type="checkbox" name="NIOKR_phys" name="Да"/>Предоставлено не в эл.виде</p>
+
+<p>
+Свидетельство об официальной регистрации программы для ЭВМ по моделированию, расчёту, вычислительному эксперименту<br>
+<i>Загрузите копию заявки<i><br>
+<input type="file" name="software"/>
+<input type="checkbox" name="software_phys" name="Да"/>Предоставлено не в эл.виде</p>
+
+<input type="submit" value="Отправить">
+
+
+</html>
